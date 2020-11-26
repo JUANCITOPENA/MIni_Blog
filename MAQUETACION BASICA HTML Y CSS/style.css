@@ -1,0 +1,809 @@
+/* Reglas de CSS para Maquetar una Pagina Basica con Estructura HTML5 y CSS*/
+
+
+/*Creado por Ing. Juancito Peña*/
+
+
+/* Primera Regla Marenes 0 a todos*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Segunda Regla para el Body */
+
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+
+/* Tercera Regla para el Contenedor de mi Pagina Web */
+
+.container {
+    width: 60%;
+    height: 100%;
+    margin: 0px auto;
+    border-radius: 25px;
+    border: 1px solid #009432;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #ffffff;
+}
+
+
+/* Cuarta Regla para el Encabezado*/
+
+header {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 50px;
+    background-color: #747d8c;
+    line-height: 50px;
+    border-radius: 25px;
+    border-top-left-radius: 26px;
+    border-top-right-radius: 26px;
+    border: 1px solid #009432;
+}
+
+
+/* Quinta Regla para el Menu de Navegacion */
+
+nav {
+    margin: auto;
+    margin-bottom: 1px;
+    width: 100%;
+    height: 80px;
+    background-color: #ffa502;
+    line-height: 80px;
+    list-style: none;
+    display: inline-block;
+    margin-bottom: 15px;
+    border-radius: 25px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 26px;
+    border: 1px solid #009432;
+}
+
+nav>ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+li {
+    margin: 0 .75rem;
+}
+
+nav ul li a:hover {
+    background-color: black;
+    border-radius: 25px;
+    color: white;
+    padding: 12px 16px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+
+/* Sesta Regla para la Section */
+
+#content {
+    float: left;
+    margin: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    width: 58%;
+    height: 100%;
+    background-color: #1e90ff;
+    line-height: auto;
+    border-radius: 25px;
+    border-top-left-radius: 26px;
+    border-top-right-radius: 26px;
+    border: 1px solid #009432;
+}
+
+#content h2 {
+    margin-top: 5px;
+}
+
+
+/* Septima Regla para el Article */
+
+article {
+    margin: auto;
+    margin-top: 40px;
+    width: 95%;
+    height: auto;
+    background-color: #ff7f50;
+    border-radius: 25px;
+    border-top-left-radius: 26px;
+    border-top-right-radius: 26px;
+    border: 1px solid #009432;
+}
+
+.clearfix {
+    clear: both;
+}
+
+
+/* Octava Regla para el Aside */
+
+aside {
+    float: right;
+    margin: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    width: 38%;
+    height: 100vh;
+    background-color: #2ed573;
+    border-radius: 25px;
+    border-top-left-radius: 26px;
+    border-top-right-radius: 26px;
+    border: 1px solid #009432;
+}
+
+.clearfix {
+    clear: both;
+}
+
+p {
+    font-size: 18px;
+    margin-top: 25px;
+    text-align: justify;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.parrafo_tablet {
+    font-size: 18px;
+    margin-top: 25px;
+    text-align: center;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+    color: blue;
+}
+
+h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+
+/* Novena Regla para el Footer */
+
+footer {
+    margin: auto;
+    width: 100%;
+    height: 100px;
+    background-color: red;
+    line-height: 100px;
+    color: white;
+    border-radius: 25px;
+    border-top-left-radius: 26px;
+    border-top-right-radius: 26px;
+    border: 1px solid #009432;
+}
+
+.footer {
+    background-color: #ffffff;
+    margin: 24px 0;
+    width: 100%;
+    height: 100px;
+}
+
+
+/* Formatos para Moviles (Iphone 6 Plus (414 x 736)*/
+
+@media only screen and (max-width: 375px) and (min-width: 812px) {
+    /* Tercera Regla para el Contenedor de mi Pagina Web */
+    .container {
+        width: 95%;
+        margin: 0px auto;
+        height: 100%;
+        /*background: white;*/
+        border-radius: 25px;
+        border: 1px solid #009432;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    /* Cuarta Regla para el Encabezado*/
+    header {
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        width: 100%;
+        height: 50px;
+        background-color: #747d8c;
+        border-top-left-radius: 26px;
+        border-top-right-radius: 26px;
+        line-height: 50px;
+    }
+    /* Quinta Regla para el Menu de Navegacion */
+    nav {
+        margin: auto;
+        margin-bottom: 20px;
+        width: 100%;
+        height: 80px;
+        background-color: #ffa502;
+        line-height: 80px;
+    }
+    nav ul li {
+        float: left;
+        list-style: none;
+        margin: 1px;
+        height: 80px;
+        font-size: 18px;
+        text-align: center;
+        line-height: 80px;
+    }
+    .clearfix {
+        clear: both;
+    }
+    /* Sesta Regla para la Section */
+    #content {
+        float: left;
+        margin: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-bottom: 20px;
+        width: 98%;
+        height: 100%;
+        background-color: #1e90ff;
+        line-height: auto;
+    }
+    .clearfix {
+        clear: both;
+    }
+    /* Septima Regla para el Article */
+    article {
+        margin: auto;
+        margin-top: 40px;
+        width: 90%;
+        height: 100%;
+        background-color: #ff7f50;
+    }
+    .clearfix {
+        clear: both;
+    }
+    /* Octava Regla para el Aside */
+    aside {
+        display: inline-block;
+        margin: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-bottom: 20px;
+        width: 90%;
+        height: 100%;
+        background-color: #2ed573;
+    }
+    p {
+        font-size: 18px;
+        margin-top: 16px;
+        text-align: justify;
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-bottom: 25px;
+    }
+    .clearfix {
+        clear: both;
+    }
+    /* Novena Regla para el Footer */
+    footer {
+        margin: auto;
+        width: 100%;
+        height: 50px;
+        background-color: red;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        line-height: 50px;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* Formatos para Moviles (Iphone 6 Plus (414 x 736)*/
+
+@media only screen and (max-width: 568px) and (min-width: 320px) {
+    /* Tercera Regla para el Contenedor de mi Pagina Web */
+    .container {
+        width: 95%;
+        margin: 0px auto;
+        height: 100%;
+        /*background: white;*/
+        border-radius: 25px;
+        border: 1px solid #009432;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    /* Cuarta Regla para el Encabezado*/
+    header {
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        width: 100%;
+        height: 50px;
+        background-color: #747d8c;
+        border-top-left-radius: 26px;
+        border-top-right-radius: 26px;
+        line-height: 50px;
+    }
+    /* Quinta Regla para el Menu de Navegacion */
+    nav {
+        margin: auto;
+        margin-bottom: 20px;
+        width: 100%;
+        height: 80px;
+        background-color: #ffa502;
+        line-height: 80px;
+    }
+    nav ul li {
+        float: left;
+        list-style: none;
+        margin: 3px;
+        height: 80px;
+        font-size: 14px;
+        text-align: center;
+        line-height: 80px;
+    }
+    .clearfix {
+        clear: both;
+    }
+    /* Sesta Regla para la Section */
+    #content {
+        float: left;
+        margin: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-bottom: 20px;
+        width: 97%;
+        height: 100%;
+        background-color: #1e90ff;
+        line-height: auto;
+    }
+    .clearfix {
+        clear: both;
+    }
+    /* Septima Regla para el Article */
+    article {
+        margin: auto;
+        margin-top: 40px;
+        width: 90%;
+        height: 100%;
+        background-color: #ff7f50;
+    }
+    .clearfix {
+        clear: both;
+    }
+    /* Octava Regla para el Aside */
+    aside {
+        float: right;
+        margin: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-bottom: 20px;
+        width: 97%;
+        height: 100%;
+        background-color: #2ed573;
+    }
+    p {
+        font-size: 18px;
+        margin-top: 16px;
+        text-align: justify;
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-bottom: 25px;
+    }
+    .clearfix {
+        clear: both;
+    }
+    /* Novena Regla para el Footer */
+    footer {
+        margin: auto;
+        width: 100%;
+        height: 50px;
+        background-color: red;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        line-height: 50px;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* Formatos para Moviles (Iphone 6 Plus (414 x 736)*/
+
+@media only screen and (max-width: 736px) and (min-width: 413px) {
+    /* Tercera Regla para el Contenedor de mi Pagina Web */
+    .container {
+        width: 95%;
+        margin: 0px auto;
+        height: 100%;
+        /*background: white;*/
+        border-radius: 25px;
+        border: 1px solid #009432;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    /* Cuarta Regla para el Encabezado*/
+    header {
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        width: 100%;
+        height: 50px;
+        background-color: #747d8c;
+        border-top-left-radius: 26px;
+        border-top-right-radius: 26px;
+        line-height: 50px;
+    }
+    /* Quinta Regla para el Menu de Navegacion */
+    nav {
+        margin: auto;
+        margin-bottom: 20px;
+        width: 100%;
+        height: 80px;
+        background-color: #ffa502;
+        line-height: 80px;
+    }
+    nav ul li {
+        float: left;
+        list-style: none;
+        margin: 5px;
+        height: 80px;
+        font-size: 14px;
+        text-align: center;
+        line-height: 80px;
+    }
+    .clearfix {
+        clear: both;
+    }
+    /* Sesta Regla para la Section */
+    #content {
+        float: left;
+        margin: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-bottom: 20px;
+        width: 97%;
+        height: 100%;
+        background-color: #1e90ff;
+        line-height: auto;
+    }
+    .clearfix {
+        clear: both;
+    }
+    /* Septima Regla para el Article */
+    article {
+        margin: auto;
+        margin-top: 40px;
+        width: 90%;
+        height: 100%;
+        background-color: #ff7f50;
+    }
+    .clearfix {
+        clear: both;
+    }
+    /* Octava Regla para el Aside */
+    aside {
+        float: right;
+        margin: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-bottom: 20px;
+        width: 97%;
+        height: 100%;
+        background-color: #2ed573;
+    }
+    p {
+        font-size: 18px;
+        margin-top: 16px;
+        text-align: justify;
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-bottom: 25px;
+    }
+    .clearfix {
+        clear: both;
+    }
+    /* Novena Regla para el Footer */
+    footer {
+        margin: auto;
+        width: 100%;
+        height: 50px;
+        background-color: red;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        line-height: 50px;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* Formatos para Moviles (Kindle Fire HD 8.9" (800 x 1280)*/
+
+@media only screen and (max-width: 1200px) and (min-width: 800px) {
+    /* Tercera Regla para el Contenedor de mi Pagina Web */
+    .container {
+        width: 100%;
+        margin: 0px auto;
+        height: 100%;
+        /*background: white;*/
+        border-radius: 25px;
+        border: 1px solid #009432;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    /* Cuarta Regla para el Encabezado*/
+    header {
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        width: 100%;
+        height: 50px;
+        background-color: #747d8c;
+        border-top-left-radius: 26px;
+        border-top-right-radius: 26px;
+        line-height: 50px;
+    }
+    /* Quinta Regla para el Menu de Navegacion */
+    nav {
+        margin: auto;
+        margin-bottom: 20px;
+        width: 100%;
+        height: 80px;
+        background-color: #ffa502;
+        line-height: 80px;
+    }
+    nav ul li {
+        float: left;
+        list-style: none;
+        margin: 5px;
+        height: 80px;
+        font-size: 18px;
+        text-align: center;
+        line-height: 80px;
+    }
+    .clearfix {
+        clear: both;
+    }
+    /* Sesta Regla para la Section */
+    #content {
+        display: block;
+        margin: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-bottom: 20px;
+        width: 97%;
+        height: 100%;
+        background-color: #1e90ff;
+        line-height: auto;
+    }
+    .clearfix {
+        clear: both;
+    }
+    /* Septima Regla para el Article */
+    article {
+        margin: auto;
+        margin-top: 40px;
+        width: 97%;
+        height: 100%;
+        background-color: #ff7f50;
+    }
+    .clearfix {
+        clear: both;
+    }
+    /* Octava Regla para el Aside */
+    aside {
+        display: inline-block;
+        margin: auto;
+        padding-left: 1px;
+        padding-right: 1px;
+        margin-bottom: 20px;
+        width: 100%;
+        height: 100%;
+        background-color: #2ed573;
+    }
+    p {
+        font-size: 2.5vw;
+        margin-top: 16px;
+        text-align: justify;
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-bottom: 25px;
+    }
+    .clearfix {
+        clear: both;
+    }
+    /* Novena Regla para el Footer */
+    footer {
+        margin: auto;
+        width: 100%;
+        height: 50px;
+        background-color: red;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        line-height: 50px;
+        margin-bottom: 10px;
+    }
+}
+
+
+/*Estilo para el Fomulario de Conatacto*/
+
+* {
+    box-sizing: border-box;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container_Form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    .col-25,
+    .col-75,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+
+/*Formato para la Tabla*/
+
+#myTable {
+    background-color: #dcdde1;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 25px;
+}
+
+table {
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    margin-bottom: 25PX;
+}
+
+th,
+td {
+    text-align: center;
+    padding: 15px;
+}
+
+
+/* th {
+    background-color: #dcdde1;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+} */
+
+thead {
+    background-color: #009432;
+    border-bottom: #ff7f50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f5f6fa
+}
+
+tr:hover td {
+    background-color: gold;
+    color: brown;
+}
+
+
+/* Desaparecer el header */
+
+.tablas thead,
+th {
+    border: none;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.tablas tr {
+    border-bottom: 3px solid;
+}
+
+.tablas td {
+    border-bottom: 1px solid #ddd;
+    display: center;
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+}
+
+.tablas td:before {
+    content: attr(data-label);
+    float: center;
+    color: #273b47;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 1px 5px;
+}
+
+.tablaPrecios td:last-child {
+    text-align: center;
+}
+
+.tabla {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}

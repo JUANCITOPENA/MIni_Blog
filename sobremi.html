@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Y CSS -IHC-1050</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+    html {
+        box-sizing: border-box;
+    }
+    
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+    
+    .column {
+        float: left;
+        width: 50%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+    }
+    
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin: 8px;
+    }
+    
+    img {
+        border: 2px solid #F8EFBA;
+        width: 50%;
+        height: 50%;
+        border-radius: 50%;
+    }
+    
+    .mifoto {
+        filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5));
+    }
+    
+    .about-section {
+        padding: 50px;
+        text-align: center;
+        background-color: #474e5d;
+        color: white;
+    }
+    
+    .contenido {
+        padding: 0 16px;
+    }
+    
+    .contenido::after,
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    
+    .title {
+        color: #182C61;
+        text-align: center;
+    }
+    
+    p {
+        color: #2C3A47;
+        text-align: center;
+    }
+    
+    h2 {
+        font-size: 25px;
+    }
+    
+    .descripcion {
+        color: #2C3A47;
+        text-align: justify;
+        font-size: 20px;
+        margin: 20px;
+        padding: 25px;
+    }
+    
+    .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+    }
+    
+    .button:hover {
+        background-color: #555;
+    }
+    
+    @media screen and (max-width: 650px) {
+        .column {
+            width: 100%;
+            display: block;
+        }
+        .descripcion {
+            color: #2C3A47;
+            text-align: justify;
+            font-size: 20px;
+            margin: 20px;
+            padding: 25px;
+        }
+    }
+    
+    @media screen and (max-width: 350px) {
+        .column {
+            width: 100%;
+            display: block;
+        }
+        .descripcion {
+            color: #2C3A47;
+            text-align: center;
+            font-size: 20px;
+            margin: 20px;
+            padding: 25px;
+        }
+    }
+</style>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Header</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobremi.html">Sobre Mi</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
+            </ul>
+        </nav>
+
+        <div class="clearfix">
+
+        </div>
+
+        <h2 style="text-align:center">Quien Soy</h2>
+        <br>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img class="mifoto" src="img/jpv.png" alt="Juancito">
+                    <div class="contenido">
+                        <br>
+                        <h2>Juancito Peña V.</h2>
+
+                        <p class="title">CEO & Founder Solutions BackBones </p>
+                        <p>IT consultant, Developer.net, Web, Movil, Data Analyst (Excel ,Power BI, SQL, Integration Services ,R , Python , RapidMiner), Technology Instructor.</p>
+                        <p>Juancito.pena@gmail.com</p>
+                        <p><button class="button">Contacto</button></p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+
+                <P class="descripcion">
+                    <strong>Fomración Profesional</strong> Ingeniero en Sistemas y Computación, con Post-Grado en Ingeniería de Software, y una Maestría en Ingeniería de Sistemas Mención Sistemas Gerenciales de la Universidad Dominicana O&M, he trabajado
+                    en varios lugares que me han permitido conocer y aprender de muchos procesos, tanto a nivel tecnológico como de áreas muy relevantes para la Administración y ventas, soy Instructor de Tecnologías en la Universidad Dominicana O&M. He
+                    realizado y participado en varios talleres y cursos técnicos, tanto a nivel presencial como virtual, todos aportando valor a los que es hoy mi pasión, las tecnologías.
+
+                    <div class="clearfix">
+
+                    </div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/WPlqpzAQQWg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                </p>
+
+
+            </div>
+
+        </div>
+
+
+
+        <div class="clearfix">
+
+        </div>
+        <footer class="footer">
+            <div style="margin: 24px 0;">
+                <a href="#"><i class="fa fa-youtube"style="font-size:48px;color:red;"></i></a>
+                <a href="#"><i class="fa fa-twitter"style="font-size:48px;color:#45aaf2;"></i></a>
+                <a href="#"><i class="fa fa-linkedin"style="font-size:48px;color:#1e3799;"></i></a>
+                <a href="#"><i class="fa fa-facebook" style="font-size:48px;color:blue;"></i></a>
+            </div>
+
+        </footer>
+    </div>
+
+</body>
+
+</html>
